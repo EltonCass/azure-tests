@@ -28,7 +28,7 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --parameters prefix=store
 
 # Deploy with paremeter file
-#az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --parameters @storage-parameters.param.json
+az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --parameters @storage-parameters.param.json
 
 # Show result
 az resource list --resource-group $RG -o table
