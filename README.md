@@ -24,3 +24,16 @@ Azure Security services
 Azure Monitoring services
 - Azure Application Insights
 
+## Run examples
+To run the following examples, you need to have the following tools installed:
+- az cli
+- az bicep cli
+
+It is also recommended to install the following tools:
+- Visual Studio Code Azure Bicep Extension
+- Visual Studio Code Azure Resource Manager Tools Extension
+
+Every exercise has a `deploy.ps1` file that you can use to run command by command, so that is
+your starting point.
+To start working with the `deploy.ps1` ensure that you are located in the correct directory folder
+where the file is located.

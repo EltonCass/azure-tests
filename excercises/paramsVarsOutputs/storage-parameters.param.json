@@ -6,7 +6,7 @@
             "value": "paramstore"
         },
         "sku": {
-            "value": "Standard"
+            "value": "Standard_LRS"
         }
     }
 }

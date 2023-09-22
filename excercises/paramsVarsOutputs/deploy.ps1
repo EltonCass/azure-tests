@@ -19,13 +19,13 @@ az login --only-show-errors
 az account set -s $subscription
 
 # RG Scope (it is expected this will fail since the RG does not exist yet)
-az deployment group create --resource-grpoup $RG --template-file .\manual-arm-storage-account.bicep
+az deployment group create --resource-group $RG --template-file .\arm-storage-account.bicep
 # Need the RG
 az group create --name $RG --location $location
 
 # Try again,  but see what would happen first
-az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --what-if
-az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --parameters prefix=testingStore
+az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --parameters prefix=testingStore --what-if
+az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --parameters prefix=store
 
 # Deploy with paremeter file
 #az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --parameters @storage-parameters.param.json

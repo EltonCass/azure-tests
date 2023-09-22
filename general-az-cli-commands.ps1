@@ -14,15 +14,15 @@ az deployment group create --template-file main.bicep
 #   --template-file main.bicep \
 #   --parameters environmentType=nonprod
 
-az deployment group create \
-  --template-file main.bicep \
+az deployment group create `
+  --template-file main.bicep `
   --parameters main.parameters.json
 
 # When you create the deployment, we also override the value for appServicePlanInstanceCount.
 #  Like with parameter files, you use the --parameters argument, 
-az deployment group create \
-  --template-file main.bicep \
-  --parameters main.parameters.json \
+az deployment group create `
+  --template-file main.bicep `
+  --parameters main.parameters.json `
                appServicePlanInstanceCount=5
 
 az deployment group list --output table
