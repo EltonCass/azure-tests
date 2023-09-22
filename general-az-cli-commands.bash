@@ -2,7 +2,7 @@ az bicep install && az bicep upgrade
 
 az login
 
- az account list
+az account list
 ## Set the default subscription for all of the Azure CLI commands that you run in this session.
 az account set --subscription "<Sub Name>" # Concierge Subscription
 

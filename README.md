@@ -1,18 +1,24 @@
 ## Overview
-This repository is for practicing using different Azure Services, via Azure CLI, powershell, Bycep files and Arm templates
+This repository is for practice scripts to create and deploy different Azure Services, via Azure CLI, Powershell, Bicep files and Arm templates.
+The following Azure Service are included:
 
-## Azure compute services
-### Azure Virtual Machines
-## Azure storage services
-### Azure Blob storage
-### Azure File storage
-### Azure Table storage
-## Azure database services
-### Azure Cosmos DB
-## Azure Security services
-## Azure Monitoring services
+Azure compute services
+- Azure Virtual Machines
 
-//[]: # (Task 1: Create a resource group)
+Azure storage services
+- Azure Blob storage
+- Azure File storage
+- Azure Table storage
+
+Azure database services
+- Azure Cosmos DB
+
+Azure Security services
+- Azure Key Vault
+
+Azure Monitoring services
+- Azure Application Insights
+
 //[]: # (Task 2: Create a storage account)
 //[]: # (Task 3: Create a virtual network)
 //[]: # (Task 4: Create a subnet)
